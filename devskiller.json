@@ -1,0 +1,16 @@
+{
+  "verification": {
+    "testNamePatterns": [ ".*tests.*" ],
+    "pathPatterns": [ "**tests/unit/verify/**" ]
+  },
+  "readOnlyFiles": [
+    "tests/**",
+    "package-lock.json",
+    "package.json",
+    "jest.config.js"
+  ],
+  "hiddenFiles": [
+    "node_modules",
+    "node_modules/**"
+  ]
+}
