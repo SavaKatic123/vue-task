@@ -3,7 +3,7 @@
     <header>
       <strong>Add Product</strong>
     </header>
-    <div id="product-form">
+    <form id="product-form">
       <label for="id">ID</label>
       <input type="text" name="id" placeholder="Product ID..."/>
 
@@ -11,7 +11,7 @@
       <input type="text" name="name" placeholder="Product Name..."/>
 
       <input type="submit" value="Add Product"/>
-    </div>
+    </form>
   </div>
 </template>
 
@@ -20,7 +20,7 @@
 export default {
   data() {
     return {
-      newItem: {
+      item: {
         id: '',
         name: ''
       }

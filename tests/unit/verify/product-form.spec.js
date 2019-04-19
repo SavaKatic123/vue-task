@@ -5,22 +5,22 @@ describe('test.data.vue', () => {
   const wrapper = mount(ProductForm)
 
   test('name should be an empty string', () => {
-    expect(wrapper.vm.newItem.name).toBe('')
+    expect(wrapper.vm.item.name).toBe('')
   })
 
   test('id should be an empty string', () => {
-    expect(wrapper.vm.newItem.id).toBe('')
+    expect(wrapper.vm.item.id).toBe('')
   })
 
   test('should be an object', () => {
-    expect(typeof wrapper.vm.newItem).toBe('object')
+    expect(typeof wrapper.vm.item).toBe('object')
   })
 })
 
 describe('input.validation', () => {
   const wrapper = mount(ProductForm)
   test('id format beginning case sensitive validated', () => {
-    wrapper.setData({newItem: {
+    wrapper.setData({item: {
       id: 'pr-12345AD',
       name: 'Product1'
     }})
@@ -30,7 +30,7 @@ describe('input.validation', () => {
   })
 
   test('id format ending case sensitive validated', () => {
-    wrapper.setData({newItem: {
+    wrapper.setData({item: {
       id: 'PR-12345ad',
       name: 'Product1'
     }})
@@ -40,7 +40,7 @@ describe('input.validation', () => {
   })
 
   test('is name length of one validated', () => {
-    wrapper.setData({newItem: {
+    wrapper.setData({item: {
       id: 'PR-12345AD',
       name: 'P'
     }})
@@ -49,7 +49,7 @@ describe('input.validation', () => {
   })
 
   test('is name length of two validated', () => {
-    wrapper.setData({newItem: {
+    wrapper.setData({item: {
       id: 'PR-12345AD',
       name: 'Pr'
     }})

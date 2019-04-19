@@ -1,9 +1,10 @@
 <template>
   <div id="app">
-    <ProductForm @add-item=""></ProductForm>
-    <ProductList @remove-item="" 
-                 :items="items">
-    </ProductList>
+    <ProductForm @add-item=""/>
+    <ProductList 
+      @remove-item="" 
+      :items="items"
+    />
   </div>
 </template>
 
@@ -17,12 +18,14 @@ export default {
       items: []
     }
   },
+
   components: {
     ProductForm,
     ProductList
   },
+
   methods: {
-    addItem(newItem) {
+    addItem(item) {
       // to-do implement adding new item event handler
     },
     removeItem(index) {

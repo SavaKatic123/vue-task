@@ -24,7 +24,7 @@ module.exports = {
   ],
   testURL: 'http://localhost/',
   watchPlugins: [
-    '/Users/sava/Code/devskiller/vue-task/vue-e-shop-nodejs/task/node_modules/jest-watch-typeahead/filename.js',
-    '/Users/sava/Code/devskiller/vue-task/vue-e-shop-nodejs/task/node_modules/jest-watch-typeahead/testname.js'
+    './node_modules/jest-watch-typeahead/filename.js',
+    './node_modules/jest-watch-typeahead/testname.js'
   ]
 }
